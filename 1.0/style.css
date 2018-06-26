@@ -1,0 +1,2060 @@
+/*
+	Author: Trevor Campbell (Cates)
+	Date: 5/31/2018
+	Description: This will be the main style sheet for the MutinyWerks Official Website
+*/
+
+@media only screen and (min-width: 600px) and (max-width: 1099px){ /* older cell phones */
+	
+	body{
+		min-height: 100%; /* real browsers */
+		height: auto !important; /* real browsers */
+		height: 100%; /* IE6: treated as min-height*/
+		overflow-y: scroll;
+	}
+	
+	html{
+		min-height: 100%;
+		width: 100%;
+		background:url('images/background.png') no-repeat center center fixed;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+	
+	#container{
+		width: 100%;
+		margin: auto;
+		/*
+		border-style: solid;
+		border-width: 2px;
+		border-color: #000000;
+		*/
+		display: inline-block;
+	}
+	
+		/* Header Start */
+		
+		#header{
+			width: 100%;
+			height: 20%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #c2c2c2;
+			*/
+			display: grid;
+			grid-template-columns: 25% 75%;
+		}
+		
+			#logo{
+				width: 20%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 3px;
+				border-color: #006210;
+				*/
+			}
+			
+			#menu{
+				width: 75%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #c5c5c5;
+				*/
+				margin: auto 22%;
+			}
+			
+			#menu ul li{
+				width: 25%;
+				display: inline-block;
+				list-style-type: none;
+				background-color: #C2C2C2;
+				opacity: .8;
+			}
+			
+			#menu ul li img{
+				margin: auto 12.5%;
+			}
+			
+			.menu-item{
+				margin: auto;
+			}
+			
+			.menu-item img:hover
+			{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+		
+		/* Header End */
+		
+		/* Main Section Start */
+		
+		#main-content{
+			width: 100%;
+			height: 70%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+			display: grid;
+		}
+		
+			/* Sidebar Settings Start */
+		
+			#sidebar{
+				width: 15%;
+				margin-top: 9%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+				/* Calendar Settings Start */
+
+				#calendar{
+					width: 95%;
+					margin-left: 2.5%;
+					font-family: "Courier New", Courier, monospace;
+					font-size: .5em;
+					color: #006210;
+				}
+
+				#date{
+					margin: auto 1%;
+					height: 14%;
+					width: 85%;
+					text-align: center;
+				}
+
+				#row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #weekday-labels{
+					display: inline-block;
+					width: 100%;
+					margin: auto 1%;
+				}
+
+				.col1, .col2, .col3, .col4, .col5, .col6, .col7{
+					display: inline;
+					width: 8%;
+					padding: 1%;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button{
+					width: 26.5%;
+					margin: auto;
+					text-align: center;
+					display: inline;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button a{
+					color: #006210;
+					text-decoration: none;
+				}
+
+				.month-button:hover{
+					filter: brightness(1.5);
+					transition: 0.3s;
+				}
+				
+				/* Calendar Settings End */
+				
+				/* Social Section Settings Start */
+
+				#social{
+					width: 90%;
+					text-align: center;
+					font-family: "Courier New", Courier, monospace;
+					font-size: 1em;
+					color: #006210;
+				}
+
+				#social-links{
+					width: 90%;
+					margin: auto 2%;
+					/*
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					*/
+					display: grid;
+					grid-template-columns: 30% 30% 30%;
+				}
+
+				#social-links img{
+					margin: 5% 30%;
+					width: 90%;
+				}
+				
+				/* Social Section Settings End */
+			
+			/* Sidebar Settings End */
+			
+			/* Main Content Settings Start */
+			
+			#content-window{
+				width: 85%;
+				margin: 10% 12%;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+			#post-title{
+				width: 80%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-title p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			#post-date{
+				width: 30%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-date p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			#post-content{
+				width: 80%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-content p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.2em;
+			}
+			
+			/* Portfolio Settings */
+
+			#portfolio{
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#portfolio-items-container{
+				width: 100%;
+				display: grid;
+				grid-template-columns: 33% 33% 33%;
+				margin: auto;
+			}
+
+			.portfolio-items{
+				display: none;
+				list-style: none;
+				margin: auto 15%;
+				padding: 1%;
+			}
+
+			.portfolio-items img{
+				width: 95%;
+				margin: auto 11%;
+			}
+
+			.portfolio-items:hover{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+
+			/* Art Projects Settings */
+
+			#art-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#art-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				text-align: center;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#art-project-1-content img{
+				width: 100%;
+			}
+
+			/*Code Projects Settings */
+
+			#code-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#code-projects{
+				width: 100%;
+			}
+
+			#code-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: .3em;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#code-project-2-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: .3em;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#code-project-3-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: .3em;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			/* Design Projects Settings */
+
+			#design-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#design-projects{
+				width: 100%;
+			}
+
+			/* Project Item Settings */
+
+			#art-1, #art-2, #art-3, #art-4, #art-5, #art-6, #art-7, #code-1, #code-2, #code-3, #code-4, #code-5, #design-1, #design-2{
+				width: 95%;
+				margin: 1% auto;
+				display: grid;
+				grid-template-columns: 75% 25%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.project-info{
+				width: 100%;
+				margin: auto;
+				margin-top: -2%;				
+			}
+
+			.project-title{
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			.project-info p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			.project-picture{
+				width: 100%;
+				margin: auto;
+				margin-left: 10%;
+			}
+
+			.projects img{
+				margin: 1% 1%;
+				width: 80%;
+			}
+
+			/* Creatives Section Settings */
+			
+			#creatives-container{
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#creative-works-about{
+				width: 90%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#creative-works-content{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				margin-top: 2%;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.cw-entry{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 70% 20%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				margin-bottom: 1%;
+			}
+
+			.cw-entry img{
+				width: 50%;
+				margin-left: 90%;
+			}
+
+			/* Quote Form Settings */
+
+			#quote-form{
+				display: none;
+				width: 80%;
+				margin-left: 10%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#quote-form img{
+				margin-left: 6%;
+			}
+			
+			/* Main Content Settings End */
+			
+		/* Main Section End */
+
+		/* Footer Section Start */
+		
+		#footer{
+			width: 100%;
+			margin: auto;
+			bottom: 0px;
+			position: fixed;
+			text-align: center;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.2em;
+			background-color: #C2C2C2;
+			opacity: .8;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+		}
+		
+		/* Footer Section End */	
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1249px){ /* newer phones / older tablets */
+
+	body{
+		min-height: 100%; /* real browsers */
+		height: auto !important; /* real browsers */
+		height: 100%; /* IE6: treated as min-height*/
+		overflow-y: scroll;
+	}
+	
+	html{
+		min-height: 100%;
+		width: 100%;
+		background:url('images/background.png') no-repeat center center fixed;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+	
+	#container{
+		width: 100%;
+		margin: auto;
+		/*
+		border-style: solid;
+		border-width: 2px;
+		border-color: #000000;
+		*/
+		display: inline-block;
+	}
+	
+		/* Header Start */
+		
+		#header{
+			width: 100%;
+			height: 20%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #c2c2c2;
+			*/
+			display: grid;
+			grid-template-columns: 25% 75%;
+		}
+		
+			#logo{
+				width: 20%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 3px;
+				border-color: #006210;
+				*/
+			}
+			
+			#menu{
+				width: 75%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #c5c5c5;
+				*/
+				margin: auto 24%;
+			}
+			
+			#menu ul li{
+				width: 25%;
+				display: inline-block;
+				list-style-type: none;
+				background-color: #C2C2C2;
+				opacity: .8;
+			}
+			
+			#menu ul li img{
+				margin: auto 12.5%;
+			}
+			
+			.menu-item{
+				margin: auto;
+			}
+			
+			.menu-item img:hover
+			{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+		
+		/* Header End */
+		
+		/* Main Section Start */
+		
+		#main-content{
+			width: 100%;
+			height: 70%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+			display: grid;
+		}
+		
+			/* Sidebar Settings Start */
+		
+			#sidebar{
+				width: 15%;
+				margin-top: 9%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+				/* Calendar Settings Start */
+
+				#calendar{
+					width: 95%;
+					margin-left: 2.5%;
+					font-family: "Courier New", Courier, monospace;
+					font-size: .5em;
+					color: #006210;
+				}
+
+				#date{
+					margin: auto 1%;
+					height: 14%;
+					width: 85%;
+					text-align: center;
+				}
+
+				#row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #weekday-labels{
+					display: inline-block;
+					width: 100%;
+					margin: auto 1%;
+				}
+
+				.col1, .col2, .col3, .col4, .col5, .col6, .col7{
+					display: inline;
+					width: 8%;
+					padding: 1%;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button{
+					width: 26.5%;
+					margin: auto;
+					text-align: center;
+					display: inline;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button a{
+					color: #006210;
+					text-decoration: none;
+				}
+
+				.month-button:hover{
+					filter: brightness(1.5);
+					transition: 0.3s;
+				}
+				
+				/* Calendar Settings End */
+				
+				/* Social Section Settings Start */
+
+				#social{
+					width: 90%;
+					text-align: center;
+					font-family: "Courier New", Courier, monospace;
+					font-size: 1em;
+					color: #006210;
+				}
+
+				#social-links{
+					width: 90%;
+					margin: auto 2%;
+					/*
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					*/
+					display: grid;
+					grid-template-columns: 30% 30% 30%;
+				}
+
+				#social-links img{
+					margin: 5% 30%;
+					width: 90%;
+				}
+				
+				/* Social Section Settings End */
+			
+			/* Sidebar Settings End */
+			
+			/* Main Content Settings Start */
+			
+			#content-window{
+				width: 85%;
+				margin: 10% 12%;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+			#post-title{
+				width: 80%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-title p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			#post-date{
+				width: 30%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-date p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			#post-content{
+				width: 80%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-content p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.2em;
+			}
+			
+			/* Portfolio Settings */
+
+			#portfolio{
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#portfolio-items-container{
+				width: 100%;
+				display: grid;
+				grid-template-columns: 33% 33% 33%;
+				margin: auto;
+			}
+
+			.portfolio-items{
+				display: none;
+				list-style: none;
+				margin: auto 15%;
+				padding: 1%;
+			}
+
+			.portfolio-items img{
+				width: 95%;
+				margin: auto 11%;
+			}
+
+			.portfolio-items:hover{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+
+			/* Art Projects Settings */
+
+			#art-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#art-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				text-align: center;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#art-project-1-content img{
+				width: 100%;
+			}
+
+			/*Code Projects Settings */
+
+			#code-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#code-projects{
+				width: 100%;
+			}
+
+			#code-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#code-project-2-page{
+				display: none;
+				margin: 1% auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#code-project-3-page{
+				display: none;
+				margin: 1% auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			/* Design Projects Settings */
+
+			#design-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#design-projects{
+				width: 100%;
+			}
+
+			/* Project Item Settings */
+
+			#art-1, #art-2, #art-3, #art-4, #art-5, #art-6, #art-7, #code-1, #code-2, #code-3, #code-4, #code-5, #design-1, #design-2{
+				width: 95%;
+				margin: 1% auto;
+				display: grid;
+				grid-template-columns: 75% 25%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.project-info{
+				width: 100%;
+				margin: auto;
+				margin-top: -2%;				
+			}
+
+			.project-title{
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			.project-info p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			.project-picture{
+				width: 100%;
+				margin: auto;
+				margin-left: 10%;
+			}
+
+			.projects img{
+				margin: 1% 1%;
+				width: 80%;
+			}
+
+			/* Creatives Section Settings */
+			
+			#creatives-container{
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#creative-works-about{
+				width: 90%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#creative-works-content{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				margin-top: 2%;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.cw-entry{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 70% 20%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				margin-bottom: 1%;
+			}
+
+			.cw-entry img{
+				width: 50%;
+				margin-left: 90%;
+			}
+
+			/* Quote Form Settings */
+
+			#quote-form{
+				display: none;
+				width: 80%;
+				margin-left: 10%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#quote-form img{
+				margin-left: 6%;
+			}
+			
+			/* Main Content Settings End */
+			
+		/* Main Section End */
+
+		/* Footer Section Start */
+		
+		#footer{
+			width: 100%;
+			margin: auto;
+			bottom: 0px;
+			position: fixed;
+			text-align: center;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.2em;
+			background-color: #C2C2C2;
+			opacity: .8;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+		}
+		
+		/* Footer Section End */
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1549px){ /* newer tablets / older laptops & desktops */
+
+	body{
+		min-height: 100%; /* real browsers */
+		height: auto !important; /* real browsers */
+		height: 100%; /* IE6: treated as min-height*/
+		overflow-y: scroll;
+	}
+	
+	html{
+		min-height: 100%;
+		width: 100%;
+		background:url('images/background.png') no-repeat center center fixed;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+	
+	#container{
+		width: 100%;
+		margin: auto;
+		/*
+		border-style: solid;
+		border-width: 2px;
+		border-color: #000000;
+		*/
+		display: inline-block;
+	}
+	
+		/* Header Start */
+		
+		#header{
+			width: 100%;
+			height: 20%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #c2c2c2;
+			*/
+			display: grid;
+			grid-template-columns: 25% 75%;
+		}
+		
+			#logo{
+				width: 20%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 3px;
+				border-color: #006210;
+				*/
+			}
+			
+			#menu{
+				width: 75%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #c5c5c5;
+				*/
+				margin: auto 25%;
+			}
+			
+			#menu ul li{
+				width: 25%;
+				display: inline-block;
+				list-style-type: none;
+				background-color: #C2C2C2;
+				opacity: .8;
+			}
+			
+			#menu ul li img{
+				margin: auto 12.5%;
+			}
+			
+			.menu-item{
+				margin: auto;
+			}
+			
+			.menu-item img:hover
+			{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+		
+		/* Header End */
+		
+		/* Main Section Start */
+		
+		#main-content{
+			width: 100%;
+			height: 70%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+			display: grid;
+		}
+		
+			/* Sidebar Settings Start */
+		
+			#sidebar{
+				width: 15%;
+				margin-top: 9%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+				/* Calendar Settings Start */
+
+				#calendar{
+					width: 95%;
+					margin-left: 2.5%;
+					font-family: "Courier New", Courier, monospace;
+					font-size: .8em;
+					color: #006210;
+				}
+
+				#date{
+					margin: auto 1%;
+					height: 14%;
+					width: 85%;
+					text-align: center;
+				}
+
+				#row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #weekday-labels{
+					display: inline-block;
+					width: 100%;
+					margin: auto 1%;
+				}
+
+				.col1, .col2, .col3, .col4, .col5, .col6, .col7{
+					display: inline;
+					width: 8%;
+					padding: 1%;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button{
+					width: 26.5%;
+					margin: auto;
+					text-align: center;
+					display: inline;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button a{
+					color: #006210;
+					text-decoration: none;
+				}
+
+				.month-button:hover{
+					filter: brightness(1.5);
+					transition: 0.3s;
+				}
+				
+				/* Calendar Settings End */
+				
+				/* Social Section Settings Start */
+
+				#social{
+					width: 90%;
+					text-align: center;
+					font-family: "Courier New", Courier, monospace;
+					font-size: 1em;
+					color: #006210;
+				}
+
+				#social-links{
+					width: 90%;
+					margin: auto 2%;
+					/*
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					*/
+					display: grid;
+					grid-template-columns: 30% 30% 30%;
+				}
+
+				#social-links img{
+					margin: 5% 30%;
+					width: 90%;
+				}
+				
+				/* Social Section Settings End */
+			
+			/* Sidebar Settings End */
+			
+			/* Main Content Settings Start */
+			
+			#content-window{
+				width: 85%;
+				margin: 10% 12%;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+			#post-title{
+				width: 80%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-title p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			#post-date{
+				width: 30%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-date p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			#post-content{
+				width: 80%;
+				margin: auto 10%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-content p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.2em;
+			}
+			
+			/* Portfolio Settings */
+
+			#portfolio{
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#portfolio-items-container{
+				width: 100%;
+				display: grid;
+				grid-template-columns: 33% 33% 33%;
+				margin: auto;
+			}
+
+			.portfolio-items{
+				display: none;
+				list-style: none;
+				margin: auto 15%;
+				padding: 1%;
+			}
+
+			.portfolio-items img{
+				width: 95%;
+				margin: auto 11%;
+			}
+
+			.portfolio-items:hover{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+
+			/* Art Projects Settings */
+
+			#art-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#art-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				text-align: center;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#art-project-1-content img{
+				width: 100%;
+			}
+
+			/*Code Projects Settings */
+
+			#code-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#code-projects{
+				width: 100%;
+			}
+
+			#code-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#code-project-2-page{
+				display: none;
+				margin: 1% auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#code-project-3-page{
+				display: none;
+				margin: 1% auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			/* Design Projects Settings */
+
+			#design-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto 7.5%;
+			}
+
+			#design-projects{
+				width: 100%;
+			}
+
+			/* Project Item Settings */
+
+			#art-1, #art-2, #art-3, #art-4, #art-5, #art-6, #art-7, #code-1, #code-2, #code-3, #code-4, #code-5, #design-1, #design-2{
+				width: 95%;
+				margin: 1% auto;
+				display: grid;
+				grid-template-columns: 75% 25%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.project-info{
+				width: 100%;
+				margin: auto;
+				margin-top: -2%;				
+			}
+
+			.project-title{
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			.project-info p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			.project-picture{
+				width: 100%;
+				margin: auto;
+				margin-left: 10%;
+			}
+
+			.projects img{
+				margin: 1% 1%;
+				width: 80%;
+			}
+
+			/* Creatives Section Settings */
+			
+			#creatives-container{
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#creative-works-about{
+				width: 90%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#creative-works-content{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				margin-top: 2%;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.cw-entry{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 70% 20%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				margin-bottom: 1%;
+			}
+
+			.cw-entry img{
+				width: 50%;
+				margin-left: 90%;
+			}
+
+			/* Quote Form Settings */
+
+			#quote-form{
+				display: none;
+				width: 80%;
+				margin-left: 10%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#quote-form img{
+				margin-left: 6%;
+			}
+			
+			/* Main Content Settings End */
+			
+		/* Main Section End */
+
+		/* Footer Section Start */
+		
+		#footer{
+			width: 100%;
+			margin: auto;
+			bottom: 0px;
+			position: fixed;
+			text-align: center;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.2em;
+			background-color: #C2C2C2;
+			opacity: .8;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+		}
+		
+		/* Footer Section End */
+}
+
+@media only screen and (min-width: 1550px){ /* laptops & desktops */
+	
+	/* Page Start */
+	
+	body{
+		min-height: 100%; /* real browsers */
+		height: auto !important; /* real browsers */
+		height: 100%; /* IE6: treated as min-height*/
+		overflow-y: scroll;
+	}
+	
+	html{
+		min-height: 100%;
+		max-width: 100%;
+		background:url('images/background.png') no-repeat center center fixed;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
+	}
+	
+	#container{
+		width: 100%;
+		margin: auto;
+		/*
+		border-style: solid;
+		border-width: 2px;
+		border-color: #000000;
+		*/
+		display: inline-block;
+	}
+	
+		/* Header Start */
+		
+		#header{
+			width: 100%;
+			height: 20%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #c2c2c2;
+			*/
+			display: grid;
+			grid-template-columns: 20% 80%;
+		}
+		
+			#logo{
+				width: 20%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 3px;
+				border-color: #006210;
+				*/
+			}
+			
+			#menu{
+				width: 75%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #c5c5c5;
+				*/
+				margin: auto 25%;
+			}
+			
+			#menu ul li{
+				width: 25%;
+				display: inline-block;
+				list-style-type: none;
+				background-color: #C2C2C2;
+				opacity: .8;
+			}
+			
+			#menu ul li img{
+				margin: auto 12.5%;
+			}
+			
+			.menu-item{
+				margin: auto;
+			}
+			
+			.menu-item img:hover
+			{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+		
+		/* Header End */
+		
+		/* Main Section Start */
+		
+		#main-content{
+			width: 100%;
+			height: 70%;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+			display: grid;
+		}
+		
+			/* Sidebar Settings Start */
+		
+			#sidebar{
+				width: 15%;
+				margin-top: 9%;
+				position: fixed;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+				/* Calendar Settings Start */
+
+				#calendar{
+					width: 95%;
+					margin-left: 2.5%;
+					font-family: "Courier New", Courier, monospace;
+					font-size: .9em;
+					color: #006210;
+				}
+
+				#date{
+					margin: auto 1%;
+					height: 14%;
+					width: 85%;
+					text-align: center;
+				}
+
+				#row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #weekday-labels{
+					display: inline-block;
+					width: 100%;
+					margin: auto 1%;
+				}
+
+				.col1, .col2, .col3, .col4, .col5, .col6, .col7{
+					display: inline;
+					width: 10%;
+					padding: 1%;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button{
+					width: 30%;
+					margin: auto;
+					text-align: center;
+					display: inline;
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					float: left;
+				}
+
+				.month-button a{
+					color: #006210;
+					text-decoration: none;
+				}
+
+				.month-button:hover{
+					filter: brightness(1.5);
+					transition: 0.3s;
+				}
+				
+				/* Calendar Settings End */
+				
+				/* Social Section Settings Start */
+
+				#social{
+					text-align: center;
+					font-family: "Courier New", Courier, monospace;
+					font-size: 1.25em;
+					color: #006210;
+				}
+
+				#social-links{
+					width: 90%;
+					margin: 2% auto;
+					/*
+					border-style: solid;
+					border-width: 2px;
+					border-color: #000000;
+					*/
+					display: grid;
+					grid-template-columns: 30% 30% 30%;
+				}
+
+				#social-links img{
+					margin: 10% 39%;
+				}
+				
+				/* Social Section Settings End */
+			
+			/* Sidebar Settings End */
+			
+			/* Main Content Settings Start */
+			
+			#content-window{
+				width: 85%;
+				margin: 10% 12%;
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+			}
+			
+			#post-title{
+				width: 40%;
+				margin: auto 30%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-title p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			#post-date{
+				width: 30%;
+				margin: auto 30%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-date p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			#post-content{
+				width: 40%;
+				margin: auto 30%;
+				margin-bottom: 2%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: #FFFFFF;
+				opacity: .8;
+			}
+
+			#post-content p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.2em;
+			}
+			
+			/* Portfolio Settings */
+
+			#portfolio{
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#portfolio-items-container{
+				width: 100%;
+				display: grid;
+				grid-template-columns: 33% 33% 33%;
+				margin: auto;
+			}
+
+			.portfolio-items{
+				display: none;
+				list-style: none;
+				margin: auto 15%;
+				padding: 1%;
+			}
+
+			.portfolio-items img{
+				width: 75%;
+				margin: auto 11%;
+			}
+
+			.portfolio-items:hover{
+				filter: brightness(1.5);
+				transition: 0.3s;
+			}
+
+			/* Art Projects Settings */
+
+			#art-projects-container{
+				display: none;
+				width: 90%;
+				margin: auto;
+			}
+
+			#art-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto 5%;
+				text-align: center;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#art-project-1-content img{
+				width: 100%;
+			}
+
+			/*Code Projects Settings */
+
+			#code-projects-container{
+				display: none;
+				width: 90%;
+				margin: 1% auto;
+			}
+
+			#code-projects{
+				width: 100%;
+			}
+
+			#code-project-1-page{
+				display: none;
+				width: 90%;
+				margin: auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#code-project-2-page{
+				display: none;
+				margin: 1% auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			
+			#code-project-3-page{
+				display: none;
+				margin: 1% auto;
+				font-family: "Courier New", Courier, monospace;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			/* Design Projects Settings */
+
+			#design-projects-container{
+				display: none;
+				width: 90%;
+				margin: 1% auto;
+			}
+
+			#design-projects{
+				width: 100%;
+			}
+
+			/* Project Item Settings */
+
+			#art-1, #art-2, #art-3, #art-4, #art-5, #art-6, #art-7, #code-1, #code-2, #code-3, #code-4, #code-5, #design-1, #design-2{
+				width: 95%;
+				margin: 1% auto;
+				display: grid;
+				grid-template-columns: 75% 25%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.project-info{
+				width: 100%;
+				margin: auto;
+				margin-top: -2%;				
+			}
+
+			.project-title{
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			.project-info p{
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+			}
+
+			.project-picture{
+				width: 100%;
+				margin: auto;
+				margin-left: 10%;
+			}
+
+			.projects img{
+				margin: 1% 1%;
+				width: 80%;
+			}
+
+			/* Creatives Section Settings */
+			
+			#creatives-container{
+				/*
+				border-style: solid;
+				border-width: 2px;
+				border-color: #000000;
+				*/
+				display: none;
+				width: 90%;
+				margin: auto 5.5%;
+			}
+
+			#creative-works-about{
+				width: 90%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1em;
+				text-align: center;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#creative-works-content{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 50% 50%;
+				margin-top: 2%;
+				margin-left: 5%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			.cw-entry{
+				width: 90%;
+				display: grid;
+				grid-template-columns: 70% 20%;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				margin-bottom: 1%;
+			}
+
+			.cw-entry img{
+				width: 50%;
+				margin-left: 90%;
+			}
+
+			/* Quote Form Settings */
+
+			#quote-form{
+				display: none;
+				width: 80%;
+				margin-left: 10%;
+				font-family: "Courier New", Courier, monospace;
+				font-size: 1.5em;
+				text-align: center;
+				border-style: solid;
+				border-color: #006210;
+				box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+
+			#quote-form img{
+				margin-left: 6%;
+			}
+			
+			/* Main Content Settings End */
+			
+		/* Main Section End */
+
+		/* Footer Section Start */
+		
+		#footer{
+			width: 100%;
+			margin: auto;
+			bottom: 0px;
+			position: fixed;
+			text-align: center;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.2em;
+			background-color: #C2C2C2;
+			opacity: .8;
+			/*
+			border-style: solid;
+			border-width: 2px;
+			border-color: #000000;
+			*/
+		}
+		
+		/* Footer Section End */
+	
+	/* Page End */
+}
